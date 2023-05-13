@@ -1,32 +1,28 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
-import { 
-  PostSection, 
-  PostSubmit, 
-  PostSubmitDiv, 
-  PostTitle, 
-  PostWriteDiv,
-  PostTitleDiv } from '../styledComponent';
+import React, { useState } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import { PostSection, PostSubmit, PostSubmitDiv, PostTitle, PostWriteDiv, PostTitleDiv } from "../styledComponent";
 
-import InputPost from './InputPost';
+import InputPost from "./InputPost";
 
-const SubmitComponent = React.memo(({onSubmit}) => (
+const SubmitComponent = React.memo(({ onSubmit }) => (
   <PostSubmitDiv>
     <PostSubmit onClick={onSubmit}>작성완료</PostSubmit>
   </PostSubmitDiv>
-))
+));
 
 const WriteTitle = React.memo(() => (
   <PostTitleDiv>
     <PostTitle>글쓰기</PostTitle>
   </PostTitleDiv>
-))
+));
 
-const WritePost = ({apiUrl}) => {
+const WritePost = () => {
+  const apiUrl = process.env.REACT_APP_API_URL;
+
   const [inputs, setInputs] = useState({
-    title: '',
-    contents: ''
+    title: "",
+    contents: "",
   });
 
   const { title, contents } = inputs;
@@ -35,19 +31,20 @@ const WritePost = ({apiUrl}) => {
     setInputs({
       ...inputs,
       [name]: value,
-    })
-  }
+    });
+  };
 
   const navigate = useNavigate();
   const onSubmit = () => {
-    axios.post(`${apiUrl}posts/`, {
-      title: inputs.title,
-      contents: inputs.contents,
-      repls: []
-    }).then(() => {
-      navigate('../');
-    })
-  }
+    axios
+      .post(`${apiUrl}posts/`, {
+        title: inputs.title,
+        contents: inputs.contents,
+      })
+      .then(() => {
+        navigate("../");
+      });
+  };
   return (
     <PostSection>
       <WriteTitle />

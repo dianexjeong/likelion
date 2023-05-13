@@ -1,10 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import {
-  SlogunSection,
-  SlogunBig,
-  SlogunSmall
-} from '../styledComponent';
+import { SlogunSection, SlogunBig, SlogunSmall } from "../styledComponent";
 
 const Slogun = () => {
   return (

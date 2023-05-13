@@ -1,7 +1,7 @@
-import React from 'react';
-import { TitleBig, TitleSmall, TitleLogoDiv } from '../styledComponent';
+import React from "react";
+import { TitleBig, TitleSmall, TitleLogoDiv } from "../styledComponent";
 
-const HeaderTitle = ({goHome}) => {
+const HeaderTitle = ({ goHome }) => {
   return (
     <>
       <TitleLogoDiv onClick={goHome}>

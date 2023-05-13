@@ -1,24 +1,22 @@
-import React from 'react';
-import { 
-HeaderDiv,  
-SubHeaderDiv, } from '../styledComponent';
+import React from "react";
+import { HeaderDiv, SubHeaderDiv } from "../styledComponent";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import HeaderTitle from './HeaderTitle';
+import HeaderTitle from "./HeaderTitle";
 
 const Header = ({ darkMode, setDarkMode }) => {
   const toggleDarkMode = () => {
     // darkMode 가 true 이면 false로,
     // false이면 true로
     setDarkMode((darkMode) => !darkMode);
-  }
+  };
 
   const navigate = useNavigate();
   const goHome = () => {
-    navigate('/');
-  }
+    navigate("/");
+  };
 
   return (
     <HeaderDiv>
@@ -33,7 +31,7 @@ const Header = ({ darkMode, setDarkMode }) => {
         )}
       </SubHeaderDiv>
     </HeaderDiv>
-  )
+  );
 };
 
 export default Header;

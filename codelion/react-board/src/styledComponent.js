@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const MediaDiv = styled.div`
   margin: 0px auto;
@@ -16,7 +16,7 @@ export const HeaderDiv = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: 'Black Han Sans', sans-serif;
+  font-family: "Black Han Sans", sans-serif;
   position: absolute;
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -64,7 +64,7 @@ export const SlogunSection = styled.div`
 
 export const SlogunBig = styled.span`
   font-size: 40px;
-  font-family: 'League Gothic', sans-serif;
+  font-family: "League Gothic", sans-serif;
 `;
 
 export const SlogunSmall = styled.span`
@@ -92,13 +92,13 @@ export const PostTitleDiv = styled.div`
 export const PostTitle = styled.span`
   margin-top: 10px;
   margin-bottom: 5px;
-  font-family: 'Black Han Sans', sans-serif;
+  font-family: "Black Han Sans", sans-serif;
   font-size: 25px;
 `;
 
 export const PostListDiv = styled.div`
   font-size: 16px;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 `;
 
 export const LoadingDiv = styled.div`
@@ -125,7 +125,7 @@ export const PostLink = styled.span`
   margin-left: 5px;
 `;
 export const PostRepl = styled.div`
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 `;
 export const PagingSection = styled.section`
   display: flex;
@@ -146,13 +146,13 @@ export const PagenumberDiv = styled.div`
 `;
 
 export const PageEmptyDiv = styled.div`
-width: 30px;
-height: 30px;
-display: flex;
-justify-content: center;
-align-items: center;
-border: 1px solid rgba(0, 0, 0, 0);
-border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 5px;
 `;
 
 export const FooterDiv = styled.div`
@@ -206,7 +206,7 @@ export const ReplInput = styled.textarea`
   padding: 10px;
   height: 30px;
   border-radius: 5px;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 `;
 export const ReplSubmitDiv = styled.div`
   width: 100px;
@@ -239,7 +239,7 @@ export const ContentsInput = styled.textarea`
   padding: 10px;
   height: 400px;
   border-radius: 5px;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 `;
 export const PostSubmitDiv = styled.div`
   width: 50%;
@@ -256,6 +256,6 @@ export const PostSubmitDiv = styled.div`
 export const PostSubmit = styled.div`
   margin-top: 10px;
   margin-bottom: 5px;
-  font-family: 'Black Han Sans', sans-serif;
+  font-family: "Black Han Sans", sans-serif;
   font-size: 20px;
 `;
